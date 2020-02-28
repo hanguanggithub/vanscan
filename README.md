@@ -1,6 +1,6 @@
 # vanscan
-打算做一个信息搜集、扫C段、指纹识别、漏洞扫描的轮子
-使用了https://github.com/Y4er/webscan 的demo，打算功能完善后，进行重构
+打算做一个信息搜集、扫C段、指纹识别、漏洞扫描的轮子 
+目前使用了https://github.com/Y4er/webscan 的demo,打算功能完善后，进行重构和前端修改
 ## 漏洞扫描
 调用awvs12或awvs13，后续添加poc专项扫描
 ## 指纹识别
