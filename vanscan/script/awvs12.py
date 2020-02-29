@@ -8,8 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 requests.packages.urllib3.disable_warnings()
 Auth = "抓包获取auth"
 API = 'https://ip:port/api/v1'
-Auth = "2986ad8c0a5b3df4d7028d5f3c06e936c5e5e4cd49b2bc4992f944a0dbfee3cee11d2531ae2f33864309b9e1933f86b990754d71eaff07074813e07a0389245d4"
-API = 'https://121.199.38.116:7333/api/v1'
+
 headers = {
     'X-Auth': Auth,
     'content-type': 'application/json'
