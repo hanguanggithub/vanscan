@@ -3,10 +3,7 @@
 #whatweb cms指纹识别api示例
 #http://whatweb.bugscaner.com/
 #进行json压缩传输,经测试,压缩后可节省将近5-10倍的宽带
-try:
-    import requests
-except:
-    print(u"返回桌面,Shift+鼠标右键,在此处打开命令窗口(W),输入:pip install requests")
+import requests
 import zlib
 import json
 

@@ -21,8 +21,7 @@ class Whatweb(View):
         domain = request.POST['domain']
         info = whatweb.bugscanerapi(domain)
         info2= whatweb.bugscanerapi2(domain)
-        yun="no"
-        #yun = whatweb.yunsee(domain)
+        yun = whatweb.yunsee(domain)
         msg = '查询失败，请检查域名是否有效，如果是第一次查询请等两分钟后再查下试试'
         return render(request, 'whatweb.html', context={'form': self.form,'msg':domain ,'info': info,'info2': info2,"yun":yun})
 # cms识别
