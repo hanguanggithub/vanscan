@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    PortScan
+    <form id="form" method="post" action="">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="submit" value="提交"/>
+    </form>
+    {% for foo in ports %}
+        {{ foo }}
+    {% endfor %}
+
+{% endblock %}
