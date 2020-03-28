@@ -146,15 +146,15 @@
 
                <el-collapse v-model="activeNames" accordion >
                 <el-collapse-item title="请求包" name="1">
-                  <div>{{logvulinfo.request}}</div>
+                  <div style="white-space: pre-wrap;">{{logvulinfo.request}}</div>
                 </el-collapse-item>
                 <el-collapse-item title="漏洞细节" name="2">
-                  <div>地址<br> {{logvulinfo.affects_url}}</div>
-                  <div>参数<br>{{logvulinfo.affects_detail}}</div>
-                  <div>细节<br>{{logvulinfo.details}}</div>
+                  <div>地址<br/> {{logvulinfo.affects_url}}</div>
+                  <div>参数<br/>{{logvulinfo.affects_detail}}</div>
+                  <div >细节<br/>{{logvulinfo.details}}</div>
                 </el-collapse-item>
                   <el-collapse-item title="漏洞描述" name="3">
-                  <div>{{logvulinfo.description}}</div>
+                  <div style="white-space: pre-wrap;">{{logvulinfo.description}}</div>
                 </el-collapse-item>
               </el-collapse>
             </el-dialog>
@@ -324,7 +324,10 @@
         else if (val===2) return '中危'
         else if (val===3) return '高危'
       }
+
     },
+    
+    
 
   })  
 </script> 
